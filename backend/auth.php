@@ -76,7 +76,7 @@ class Auth
         session_start();
         session_unset();
         session_destroy();
-        header("Location : ifb-salon/frontend/login.php");
+        header("Location: /ifb-salon/frontend/login.php");
         exit();
     }
 }

@@ -17,6 +17,22 @@ class Database
     }
 }
 
+class Employee
+{
+    private $conn;
+    public function __construct($db)
+    {
+        $this->conn = $db;
+    }
+
+    public function read()
+    {
+        $query = "SELECT * FROM employees";
+        return $this->conn->query($query);
+    }
+
+}
+
 class Customer
 {
     private $conn;
